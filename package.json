@@ -1,5 +1,8 @@
 {
     "name": "@dependency/parseKeyValuePairSeparatedBySymbol",
     "version": "0.1.0",
-    "main": "./source/entrypoint.js"
+    "main": "./source/entrypoint.js",
+    "dependencies": {
+        "@dependency/javascriptTranspilation": "https://github.com/AppScriptIO/javascriptTranspilation"
+    }
 }
