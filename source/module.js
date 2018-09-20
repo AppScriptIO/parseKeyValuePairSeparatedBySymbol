@@ -1,8 +1,8 @@
 // 'x=y' --> { x: y }
 export function parseKeyValuePairSeparatedBySymbolConcatenatedString({ string, delimiter = ' ', separatingSymbol = '=' }) {
-    
     return parseKeyValuePairSeparatedBySymbolFromArray({ 
-        array: string.split(separatingSymbol)
+        array: string.split(delimiter),
+        separatingSymbol
     })
 }
 
