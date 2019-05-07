@@ -16,7 +16,6 @@ export function parseKeyValuePairSeparatedBySymbolFromArray({ array, separatingS
     return parsedObject
 }
 
-
 export function combineKeyValueObjectIntoString({ object, delimiter = ' ', separatingSymbol='=' }) {
     return Object.keys(object)
         .reduce((previous, key) => {
