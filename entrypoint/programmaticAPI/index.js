@@ -7,7 +7,7 @@ if(filesystem.existsSync(projectConfig.directory.distribution)) {
   // • Transpilation (babelJSCompiler)
   const { Compiler } = require('@dependency/javascriptTranspilation')
   console.log(Compiler)
-  let compiler = new Compiler({ babelTransformConfig: projectConfig.transpilation.babelConfig })
+  let compiler = new Compiler({ callerPath: __dirname })
   compiler.requireHook()
   module.exports = require(path.join(projectConfig.directory.source, projectConfig.entrypoint.programmaticAPI))
 }
