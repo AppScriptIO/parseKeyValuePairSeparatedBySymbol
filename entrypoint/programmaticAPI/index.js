@@ -5,7 +5,7 @@ if(filesystem.existsSync(projectConfig.directory.distribution)) {
   module.exports = require(projectConfig.directory.distribution)
 } else {
   // • Transpilation (babelJSCompiler)
-  const { Compiler } = require('@dependency/javascriptTranspilation')
+  const { Compiler } = require('@deployment/javascriptTranspilation')
   console.log(Compiler)
   let compiler = new Compiler({ callerPath: __dirname })
   compiler.requireHook()
